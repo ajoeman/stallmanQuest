@@ -122,8 +122,8 @@ footer{
 }
 @media only screen and (max-width: 640px){
   canvas{
-    width = 470px;
-    height = auto;
+    max-width: 470px;
+    max-height: 265px;
   }
 }
 @media only screen and (max-width: 470px){
