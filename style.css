@@ -52,9 +52,13 @@ html{
 #right{
   padding-left: 40px;
 }
+#mobile{
+  display: none;
+}
 canvas{
   flex-grow: 2;
   max-width: 640px;
+  max-height: 360px;
 }
 nav{
   background-color: firebrick;
@@ -88,4 +92,52 @@ footer{
   margin-top: 0rem;
   padding: 5em 0;
   background-color: black;
+}
+
+@media only screen and (max-width: 1024px){
+  nav .container{
+    display: none;
+  }
+  nav span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .game-container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #right{
+    display: none;
+  }
+  #left{
+    padding: 0;
+  }
+  .text-container{
+    flex-basis: auto;
+  }
+  .text-container h2{
+    display:none;
+  }
+}
+@media only screen and (max-width: 640px){
+  canvas{
+    width = 470px;
+    height = auto;
+  }
+}
+@media only screen and (max-width: 470px){
+ footer{
+   text-align: center;
+
+ }
+ .header{
+   display: none;
+ }
+ #default{
+   display: none;
+ }
+ #mobile{
+   display: inherit;
+ }
 }
